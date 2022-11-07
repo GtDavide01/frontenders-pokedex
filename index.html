@@ -1,15 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontenders-pokedex</title>
-</head>
-<body>
-    
-
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+    <!-- myStileCss -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapperpokedex">
+      <!-- HEADER -->
+      <header>
+        <h1>Cerca un pokemon</h1>
+        <input type="text" placeholder="es. charmender" />
+        <button>cerca</button>
+      </header>
+      <!-- Main -->
+      <main>
+        <h2>Ecco i tuoi risultati per ...</h2>
+        <ul>
+          <li>Nome:</li>
+          <li>Peso:</li>
+          <li>Altezza</li>
+        </ul>
+        <hr />
+        <div class="container-info-pokemon">
+          <div class="img-pokemon"></div>
+          <div class="button-pokemon">
+            <button class="button button-outline">default</button>
+            <button class="button button-outline">shiny</button>
+          </div>
+          <div class="statistiche-pokemon">
+            <h3>Statistiche</h3>
+            <ul>
+              <li>hp</li>
+              <li>attack</li>
+              <li>defense</li>
+              <li>special-attack</li>
+              <li>special-defense</li>
+              <li>speed</li>
+            </ul>
+          </div>
+        </div>
+        <button>aggiungilo al pokedex</button>
+      </main>
+      <!-- footer -->
+      <footer>
+        <h2>Il tuo pokedex</h2>
+      </footer>
+    </div>
 
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
